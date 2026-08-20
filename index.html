@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmorOrisha</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #fafafa; }
+        .header { background: #111; color: white; padding: 20px; text-align: center; }
+        .menu { background: #222; display: flex; justify-content: center; gap: 10px; padding: 12px; flex-wrap: wrap; position: sticky; top: 0; z-index: 1>
+        .menu button { color: white; background: #333; border: 1px solid #725D36; padding: 8px 18px; border-radius: 20px; font-weight: bold; cursor: poin>
+        .menu button.activo { background: #725D36; }
+        .productos { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 15px; }
+        .card { background: white; border-radius: 12px; padding: 10px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .card img { width: 100%; border-radius: 8px; }
+        .card h3 { margin: 8px 0 4px 0; font-size: 16px; }
+        .precio { color: #e63946; font-weight: bold; font-size: 18px; margin: 5px 0; }
+        .btn { background: #725D36; color: white; padding: 10px; text-decoration: none; border-radius: 8px; display: block; margin-top: 8px; font-weight:>
+        .oculto { display: none !important; }
+        @media (max-width: 600px) { .productos { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+  <div class="header">
+        <h1>Bienvenidos al Sitio Web Oficial de AmorOrisha.</h1>
+    </div>
+
+   <nav class="menu">
+        <button onclick="filtrar('Ropa')" id="btn-Ropa" class="activo">Ropa</button>
+        <button onclick="filtrar('Botánica')" id="btn-Botánica">Botánica</button>
+        <button onclick="filtrar('Joyeria')" id="btn-Joyeria">Joyería</button>
+        <button onclick="filtrar('Escuela')" id="btn-Escuela">Escuela</button>
+    </nav>
+
+   <div class="productos">
+       <!-- ROPA -->
+        <div class="card" data-categoria="Ropa">
+            <img src= "SudaderaEleggua.jpg_front.png" "SudaderaEleggua.jpg_back.png"  alt="SudaderaOrishaEleggua">
+            <h3>Los diseños más exclusivos para rendirle Moforibale a Babá Eleggua día a día</h3>
+            <p>¡Ashe Eleggua!</p>
+            <p class="precio">$55 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Sudadera" class="btn">Pedir por Facebook</a>
+        </div>
+
+  <div class="card" data-categoria="Ropa">
+            <img src= "SudaderaShango.jpg_front.png SudaderaShango.jpg_back.png" alt="SudaderaOrishaShango">
+            <h3>Shango en todos lados</h3>
+            <p>¡Kabiosile Shango!</p>
+            <p class="precio">$55 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Sudadera" class="btn">Pedir por Facebook</a>
+           <!-- SELECTOR DE TALLA -->
+          <label style="font-size:13px; font-weight:bold;">Talla:</label>
+          <select class="talla" style="width:100%; padding:8px; border-radius:8px; margin:5px 0; border:1px solid #ccc;">
+          <option value="">Elige talla</option>
+          <option value="CH">(3Years) </option>
+          <option value="M">Kid</option>
+          <option value="G">S</option>
+          <option value="XL">M</option>
+          <option value="2XL">L</option>
+    </select>
+
+  </div>
+
+  <div class="card" data-categoria="Ropa">
+            <img src="SudaderaObbatala.jpg_front.png SudaderaObbatala.jpg_back.png" alt="SudaderaOrishaObatala">
+            <h3>Elegancia</h3>
+            <p>¡Jekua Babá!</p>
+            <p class="precio">$55 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Sudadera" class="btn">Pedir por Facebook</a>
+           <!-- SELECTOR DE TALLA -->
+          <label style="font-size:13px; font-weight:bold;">Talla:</label>
+          <select class="talla" style="width:100%; padding:8px; border-radius:8px; margin:5px 0; border:1px solid #ccc;">
+          <option value="">Elige talla</option>
+          <option value="CH">(3Years) </option>
+          <option value="M">Kid</option>
+          <option value="G">S</option>
+          <option value="XL">M</option>
+          <option value="2XL">L</option>
+    </select>
+
+ </div>
+         <div class="card" data-categoria="Ropa">
+            <img src=" SudaderaOggun.jpg_front.png  SudaderaOggun.jpg_back.png" alt="SudaderaOrishaOggun">
+            <h3>Caminar con su fuerza Rey Oggun</h3>
+            <p>¡Padre Guerrero!</p>
+            <p class="precio">$55 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Sudadera" class="btn">Pedir por Facebook</a
+          <!-- SELECTOR DE TALLA -->
+          <label style="font-size:13px; font-weight:bold;">Talla:</label>
+          <select class="talla" style="width:100%; padding:8px; border-radius:8px; margin:5px 0; border:1px solid #ccc;">
+          <option value="">Elige talla</option>
+          <option value="CH">(3Years) </option>
+          <option value="M">Kid</option>
+          <option value="G">S</option>
+          <option value="XL">M</option>
+          <option value="2XL">L</option>
+    </select>
+</div>
+         <!-- ROPA -->
+        <div class="card" data-categoria="Ropa">
+            <img src= "PlayeraEleggua.jpg"  alt="PlayeraOrishaEleggua">
+            <h3>Los diseños más exclusivos para rendirle Moforibale a Babá Eleggua día a día</h3>
+            <p>¡Ashe Eleggua!</p>
+            <p class="precio">$55 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Playera" class="btn">Pedir por Facebook</a>
+        </div>
+
+  <div class="card" data-categoria="Ropa">
+            <img src= "Shango.jpg_back.png Shango.jpg_front.png ShangoPlayera.jpg_back.png" alt="PlayeraOrishaShango">
+            <h3>Shango en todos lados</h3>
+            <p>¡Kabiosile Shango!</p>
+            <p class="precio">$55 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Playera" class="btn">Pedir por Facebook</a>
+           <!-- SELECTOR DE TALLA -->
+          <label style="font-size:13px; font-weight:bold;">Talla:</label>
+          <select class="talla" style="width:100%; padding:8px; border-radius:8px; margin:5px 0; border:1px solid #ccc;">
+          <option value="">Elige talla</option>
+          <option value="CH">(3Years) </option>
+          <option value="M">Kid</option>
+          <option value="G">S</option>
+          <option value="XL">M</option>
+          <option value="2XL">L</option>
+    </select>
+</div>
+
+   <div class="card" data-categoria="Ropa">
+            <img src="Obatala.jpg_front.png Obatala.jpg_back.png" alt="PlayeraOrishaObatala">
+            <h3>Elegancia</h3>
+            <p>¡Jekua Babá!</p>
+            <p class="precio">$55 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Playera" class="btn">Pedir por Facebook</a>
+           <!-- SELECTOR DE TALLA -->
+          <label style="font-size:13px; font-weight:bold;">Talla:</label>
+          <select class="talla" style="width:100%; padding:8px; border-radius:8px; margin:5px 0; border:1px solid #ccc;">
+          <option value="">Elige talla</option>
+          <option value="CH">(3Years) </option>
+          <option value="M">Kid</option>
+          <option value="G">S</option>
+          <option value="XL">M</option>
+          <option value="2XL">L</option>
+    </select>
+</div>
+         <div class="card" data-categoria="Ropa">
+            <img src= "PlayeraOggun.jpg" alt="PlayeraOrishaOggun">
+            <h3>Caminar con su fuerza Rey Oggun</h3>
+            <p>¡Padre Guerrero!</p>
+            <p class="precio">$55 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Playera" class="btn">Pedir por Facebook</a>
+           <!-- SELECTOR DE TALLA -->7
+          <label style="font-size:13px; font-weight:bold;">Talla:</label>
+          <select class="talla" style="width:100%; padding:8px; border-radius:8px; margin:5px 0; border:1px solid #ccc;">
+          <option value="">Elige talla</option>
+          <option value="CH">(3Years) </option>
+          <option value="M">Kid</option>   <option value="G">S</option>
+          <option value="XL">M</option>
+          <option value="2XL">L</option>
+    </select>
+</div>
+
+  <div class="card" data-categoria="Ropa">
+            <img src= "GorraEleggua.jpg_front.png GorraEleggua.jpg_back.png" alt="Gorra Eleggua">
+            <h3>Para los que tienen la corona de Eleggua.</h3>
+            <p>¡Ashe Eleggua!</p>
+            <p class="precio">$44 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Gorra" class="btn">Pedir por Facebook</a>
+        </div>
+
+  <div class="card" data-categoria="Ropa">
+            <img src="GorraShango.jpg_front.png GorraShango.jpg_back.png" alt="Gorra Shango">
+            <h3>Para los que creen en Shangó.</h3>
+            <p>¡Maferefun Shangó</p>
+            <p class="precio">$44 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Gorra" class="btn">Pedir por Facebook</a>
+        </div>
+
+   <div class="card" data-categoria="Ropa">
+            <img src="GorraOggun.jpg_front.png GorraOggun.jpg_back.png" alt="Gorra Oggun">
+            <p>¡Protegame Dios del Hierro!</p>
+            <p class="precio">$44 DLLS</p>
+                <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Gorra" class="btn">Pedir por Facebook</a>                                 >
+        </div>
+ <!-- BOTANICA -->
+        <div class="card" data-categoria="Botánica">
+            <img src=" VeladoraElegguaFront.jpg" alt="Veladora de gel arómatica para Eleggua">
+            <h3>Exquisita veladora de gel con aroma a coco para atender a Eleggua.</h3>
+            <p class="precio">$7 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Veladora" class="btn">Pedir por Facebook</a>
+        </div>
+
+<div class="card" data-categoria="Botánica">
+            <img src="VeladoraGel1Million.jpg" alt="Veladora de gel 1MillionDollars">
+            <h3>Para que siempre nos vaya bien.</h3>
+            <p class="precio">$7 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Veladora" class="btn">Pedir por Facebook</a>
+        </div>
+
+ <div class="card" data-categoria="Botán7ica">
+            <img src="VeladoraGel33Esenciasjpg" alt="Veladora de gel 33Esencias">
+            <h3>Para cualquier situación.</h3>
+            <p class="precio">$7 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Veladora" class="btn">Pedir por Facebook</a>
+        </div>
+
+   <div class="card" data-categoria="Botánica">
+            <img src="VeladoraGelArrasaTodo.jpg" alt="Veladora de gel ArrasaTodo">
+            <h3>¡Para liberarnos de toda carga negativa!</h3>
+            <p class="precio">$7 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Veladora" class="btn">Pedir por Facebook</a>
+        </div>
+
+  <div class="card" data-categoria="Botánica">
+            <img src="VeladoraGelDobleSuerte.jpg" alt="Veladora de gel DobleSuerte">
+            <h3>Para gozar de la buena suerte..</h3>
+            <p class="precio">$7 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Veladora" class="btn">Pedir por Facebook</a>
+        </div>
+
+  <div class="card" data-categoria="Botánica">
+            <img src="VeladoraGelLluviaEstrellas.jpg" alt="Veladora de gel Lluvia de estrellas">
+            <h3>Para el Universo.</h3>
+            <p class="precio">$7 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Veladora" class="btn">Pedir por Facebook</a>
+        </div>
+
+  <div class="card" data-categoria="Botánica">
+            <img src="VeladoraGelMielAmor.jpg" alt="Veladora de gel Miel de amor">
+            <h3>¡Amor!.</h3>7
+            <p class="precio">$7 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Veladora" class="btn">Pedir por Facebook</a>
+        </div>
+
+  <div class="card" data-categoria="Botánica">
+            <img src="VeladoraGelLimpiaAura.jpg" alt="Veladora de gel Limpia aura">
+            <h3>Para el bienestar propio.</h3>
+            <p class="precio">$7 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Veladora" class="btn">Pedir por Facebook</a>
+        </div>
+    <!-- JOYERIA -->
+        <div class="card" data-categoria="Joyeria">
+            <img src="ManoOrula.jpg" alt="Mano De Orula Oro 14K">
+            <h3>Lleva algo tan preciado como lo es la Mano de Orula a otro nivel con este bello
+                diseño.</h3>
+            <p class="precio">$75 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20ManoDeOrula" class="btn">Pedir por Facebook</a>
+        </div>
+      <!-- ESCUELA -->
+        <div class="card" data-categoria="Escuela">
+            <img src="gorro.jpg" alt="Fidel Castro Escuela de Palo Mayombe">
+            <h3>Aprende acerca de el Palo Mayombe y empieza a trabajarlo! Con 3 clases semanales..</h3>
+            <p class="precio">$99 DLLS</p>
+            <a href="https://m.me/61591911933009?text=Me%20interesa%20la%20Escuela" class="btn">Pedir por Facebook</a>
+        </div>
+
+    </div>
+
+<script>
+function filtrar(categoria) {
+    let productos = document.querySelectorAll('.card');
+    let botones = document.querySelectorAll('.menu button');
+
+    botones.forEach(b => b.classList.remove('activo'));
+    document.getElementById('btn-' + categoria).classList.add('activo');
+
+    productos.forEach(p => {
+        if (categoria === 'todo' || p.dataset.categoria === categoria) {
+            p.classList.remove('oculto');
+        } else {
+            p.classList.add('oculto');
+        }
+    });
+}
+</script>
+
+</body>
+</html>
+

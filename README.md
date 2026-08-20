@@ -1,2 +1,0 @@
-# LuiggyArthur.github.io
-AmorOrisha
